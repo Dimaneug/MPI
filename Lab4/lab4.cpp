@@ -160,7 +160,7 @@ int main(int argc, char** argv) {
             printf("\n");
         }
     }
-
+    MPI_Type_free(&matrix);
     MPI_Finalize();
     return 0;
 }
